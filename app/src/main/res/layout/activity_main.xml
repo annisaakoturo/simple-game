@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="16dp"
+    tools:context=".MainActivity">
+
+    <ImageView
+        android:id="@+id/computer"
+        android:layout_width="match_parent"
+        android:layout_height="250dp"
+        android:scaleType="centerCrop"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/gamestart" />
+
+    <Button
+        android:id="@+id/gunting"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Gunting"
+        app:layout_constraintBottom_toTopOf="@id/player"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/computer"
+
+        />
+    <Button
+        android:id="@+id/batu"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Batu"
+        app:layout_constraintBottom_toTopOf="@id/player"
+        app:layout_constraintStart_toEndOf="@id/gunting"
+        app:layout_constraintEnd_toStartOf="@id/kertas"
+        app:layout_constraintTop_toBottomOf="@id/computer"
+
+        />
+    <Button
+        android:id="@+id/kertas"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Kertas"
+        app:layout_constraintBottom_toTopOf="@id/player"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/computer"
+        />
+
+    <ImageView
+        android:id="@+id/player"
+        android:layout_width="match_parent"
+        android:layout_height="250dp"
+        android:scaleType="centerCrop"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:srcCompat="@drawable/gamestart" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
